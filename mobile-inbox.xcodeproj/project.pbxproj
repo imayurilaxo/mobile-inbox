@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFC3A10B49865D62B42A45EC /* Pods_mobile_inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */; };
+		1F87E3F21EDD9124004276D0 /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87E3F11EDD9124004276D0 /* RestApi.swift */; };
+		1FF835EB1EE15C2D00D7A009 /* Activiti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF835EA1EE15C2D00D7A009 /* Activiti.swift */; };
+		CF3C6AB2DC90756713E8CBC9 /* Pods_mobile_inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917C7A08DE00C4F2C8A47B5D /* Pods_mobile_inbox.framework */; };
 		F37200B81EDCCEA900553C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37200B71EDCCEA900553C07 /* AppDelegate.swift */; };
 		F37200BA1EDCCEA900553C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37200B91EDCCEA900553C07 /* ViewController.swift */; };
 		F37200BD1EDCCEA900553C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37200BB1EDCCEA900553C07 /* Main.storyboard */; };
@@ -26,9 +28,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1F87E4101EDD926A004276D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.release.xcconfig"; sourceTree = "<group>"; };
+		1F87E3F11EDD9124004276D0 /* RestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApi.swift; path = OpenIAM/Sources/RestApi.swift; sourceTree = "<group>"; };
+		1FF835EA1EE15C2D00D7A009 /* Activiti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activiti.swift; path = OpenIAM/Sources/Activiti.swift; sourceTree = "<group>"; };
+		917C7A08DE00C4F2C8A47B5D /* Pods_mobile_inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB2C4A9FA7263D7D9EE17CE /* Pods-mobile-inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.release.xcconfig"; sourceTree = "<group>"; };
+		D6174DEA9169F8B106273ED0 /* Pods-mobile-inbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.debug.xcconfig"; sourceTree = "<group>"; };
 		F37200B41EDCCEA900553C07 /* mobile-inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37200B71EDCCEA900553C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37200B91EDCCEA900553C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +57,6 @@
 		F37200C81EDCCEA900553C07 /* mobile-inboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-inboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37200CC1EDCCEA900553C07 /* mobile_inboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_inboxTests.swift; sourceTree = "<group>"; };
 		F37200CE1EDCCEA900553C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC3A10B49865D62B42A45EC /* Pods_mobile_inbox.framework in Frameworks */,
+				CF3C6AB2DC90756713E8CBC9 /* Pods_mobile_inbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF3DF35B133D846B761E4443 /* Frameworks */ = {
+		1DB27F52C0DED90F764C9F07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */,
+				D6174DEA9169F8B106273ED0 /* Pods-mobile-inbox.debug.xcconfig */,
+				CAB2C4A9FA7263D7D9EE17CE /* Pods-mobile-inbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB28E85FFBA6FFBFE705BA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				917C7A08DE00C4F2C8A47B5D /* Pods_mobile_inbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,8 +101,8 @@
 				F37200B61EDCCEA900553C07 /* mobile-inbox */,
 				F37200CB1EDCCEA900553C07 /* mobile-inboxTests */,
 				F37200B51EDCCEA900553C07 /* Products */,
-				FA6D420057368A5609819661 /* Pods */,
-				BF3DF35B133D846B761E4443 /* Frameworks */,
+				1DB27F52C0DED90F764C9F07 /* Pods */,
+				EB28E85FFBA6FFBFE705BA0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +118,8 @@
 		F37200B61EDCCEA900553C07 /* mobile-inbox */ = {
 			isa = PBXGroup;
 			children = (
+				1F87E3F11EDD9124004276D0 /* RestApi.swift */,
+				1FF835EA1EE15C2D00D7A009 /* Activiti.swift */,
 				F37200B71EDCCEA900553C07 /* AppDelegate.swift */,
 				F37200B91EDCCEA900553C07 /* ViewController.swift */,
 				F37200BB1EDCCEA900553C07 /* Main.storyboard */,
@@ -111,15 +139,6 @@
 			path = "mobile-inboxTests";
 			sourceTree = "<group>";
 		};
-		FA6D420057368A5609819661 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */,
-				A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,12 +146,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F37200D11EDCCEA900553C07 /* Build configuration list for PBXNativeTarget "mobile-inbox" */;
 			buildPhases = (
-				1D2AD21F019ADEB4C04EFD77 /* [CP] Check Pods Manifest.lock */,
+				F95CD9E1D9A64E861DB79EAE /* [CP] Check Pods Manifest.lock */,
 				F37200B01EDCCEA900553C07 /* Sources */,
 				F37200B11EDCCEA900553C07 /* Frameworks */,
 				F37200B21EDCCEA900553C07 /* Resources */,
-				AC1EDDED25182DC43E79057B /* [CP] Embed Pods Frameworks */,
-				7B77002FEC8B9DDCCA7AED0D /* [CP] Copy Pods Resources */,
+				1F87E4101EDD926A004276D0 /* Embed Frameworks */,
+				5076027DF0193819FA39D978 /* [CP] Embed Pods Frameworks */,
+				CB7231CBADDB2A4621F5E404 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,10 +193,12 @@
 				TargetAttributes = {
 					F37200B31EDCCEA900553C07 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z7YED68P25;
 						ProvisioningStyle = Automatic;
 					};
 					F37200C71EDCCEA900553C07 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z7YED68P25;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F37200B31EDCCEA900553C07;
 					};
@@ -222,37 +244,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D2AD21F019ADEB4C04EFD77 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7B77002FEC8B9DDCCA7AED0D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC1EDDED25182DC43E79057B /* [CP] Embed Pods Frameworks */ = {
+		5076027DF0193819FA39D978 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +259,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CB7231CBADDB2A4621F5E404 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95CD9E1D9A64E861DB79EAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,6 +298,8 @@
 			files = (
 				F37200BA1EDCCEA900553C07 /* ViewController.swift in Sources */,
 				F37200B81EDCCEA900553C07 /* AppDelegate.swift in Sources */,
+				1FF835EB1EE15C2D00D7A009 /* Activiti.swift in Sources */,
+				1F87E3F21EDD9124004276D0 /* RestApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,26 +438,36 @@
 		};
 		F37200D21EDCCEA900553C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */;
+			baseConfigurationReference = D6174DEA9169F8B106273ED0 /* Pods-mobile-inbox.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z7YED68P25;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "openiam.mobile-inbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F37200D31EDCCEA900553C07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */;
+			baseConfigurationReference = CAB2C4A9FA7263D7D9EE17CE /* Pods-mobile-inbox.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z7YED68P25;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "openiam.mobile-inbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -443,6 +477,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z7YED68P25;
 				INFOPLIST_FILE = "mobile-inboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "openiam.mobile-inboxTests";
@@ -457,6 +492,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z7YED68P25;
 				INFOPLIST_FILE = "mobile-inboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "openiam.mobile-inboxTests";
@@ -485,6 +521,7 @@
 				F37200D31EDCCEA900553C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F37200D41EDCCEA900553C07 /* Build configuration list for PBXNativeTarget "mobile-inboxTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +530,7 @@
 				F37200D61EDCCEA900553C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
