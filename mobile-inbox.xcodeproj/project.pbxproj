@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFC3A10B49865D62B42A45EC /* Pods_mobile_inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */; };
 		F37200B81EDCCEA900553C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37200B71EDCCEA900553C07 /* AppDelegate.swift */; };
 		F37200BA1EDCCEA900553C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37200B91EDCCEA900553C07 /* ViewController.swift */; };
 		F37200BD1EDCCEA900553C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37200BB1EDCCEA900553C07 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.release.xcconfig"; sourceTree = "<group>"; };
 		F37200B41EDCCEA900553C07 /* mobile-inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37200B71EDCCEA900553C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37200B91EDCCEA900553C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		F37200C81EDCCEA900553C07 /* mobile-inboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-inboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37200CC1EDCCEA900553C07 /* mobile_inboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_inboxTests.swift; sourceTree = "<group>"; };
 		F37200CE1EDCCEA900553C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-inbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC3A10B49865D62B42A45EC /* Pods_mobile_inbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF3DF35B133D846B761E4443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E026A509707D3A9A579167D /* Pods_mobile_inbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F37200AB1EDCCEA800553C07 = {
 			isa = PBXGroup;
 			children = (
 				F37200B61EDCCEA900553C07 /* mobile-inbox */,
 				F37200CB1EDCCEA900553C07 /* mobile-inboxTests */,
 				F37200B51EDCCEA900553C07 /* Products */,
+				FA6D420057368A5609819661 /* Pods */,
+				BF3DF35B133D846B761E4443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,15 @@
 			path = "mobile-inboxTests";
 			sourceTree = "<group>";
 		};
+		FA6D420057368A5609819661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */,
+				A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F37200D11EDCCEA900553C07 /* Build configuration list for PBXNativeTarget "mobile-inbox" */;
 			buildPhases = (
+				1D2AD21F019ADEB4C04EFD77 /* [CP] Check Pods Manifest.lock */,
 				F37200B01EDCCEA900553C07 /* Sources */,
 				F37200B11EDCCEA900553C07 /* Frameworks */,
 				F37200B21EDCCEA900553C07 /* Resources */,
+				AC1EDDED25182DC43E79057B /* [CP] Embed Pods Frameworks */,
+				7B77002FEC8B9DDCCA7AED0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D2AD21F019ADEB4C04EFD77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B77002FEC8B9DDCCA7AED0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1EDDED25182DC43E79057B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-inbox/Pods-mobile-inbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F37200B01EDCCEA900553C07 /* Sources */ = {
@@ -339,6 +414,7 @@
 		};
 		F37200D21EDCCEA900553C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F0F73BEFD1C45375BFD191 /* Pods-mobile-inbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
@@ -351,6 +427,7 @@
 		};
 		F37200D31EDCCEA900553C07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E84C134352C2917E99A1DE /* Pods-mobile-inbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mobile-inbox/Info.plist";
